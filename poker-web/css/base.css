@@ -1,10 +1,10 @@
 @font-face {
   font-family: Nexa Light;
-  src: url("fonts/NexaFreeLightwebfont.ttf"); }
+  src: url("../fonts/NexaFreeLightwebfont.ttf"); }
 
 @font-face {
   font-family: Century Gothic;
-  src: url("fonts/GOTHIC.TTF"); }
+  src: url("../fonts/GOTHIC.TTF"); }
 
 body {
   margin: 0;
