@@ -9,6 +9,7 @@
 
 $red: #9b1012
 $grey: #2d2d2d
+$animation: all 0.4s ease-out 0s
 body
   margin: 0
   padding: 0
@@ -156,20 +157,22 @@ body
   font-family: Century Gothic
   .slider-wrapper
     position: relative
+    overflow: hidden
+    height: 500px
     .controls
       img
         cursor: pointer
         position: absolute
         &.left
-          top: 50px
+          top: 170px
           left: 300px
         &.right
-          top: 49px
+          top: 169px
           right: 300px
   .dots
     display: flex
     justify-content: center
-    margin-top: 100px
+    margin-top: 460px
     .dot
       height: 13px
       width: 13px
@@ -177,7 +180,7 @@ body
       border: 1px solid black
       margin: 0 12px
       position: relative
-      &.active:after
+      &:after
         content: " "
         position: absolute
         background-color: $red
@@ -186,15 +189,22 @@ body
         border-radius: 50%
         left: 1px
         top: 1px
+        transition: $animation
+        opacity: 0
+      &.active:after
+        opacity: 1
   .slider-container
     display: flex
     margin-top: 130px
     align-items: center
-    justify-content: space-around
+    justify-content: flex-start
+    width: 999999px
+    position: absolute
+    transition: $animation
   .slide
     filter: blur(5px)
     width: 315px
-    transition: all 1s ease-out 0s
+    transition: $animation
     .slide-text
       width: 70%
       margin: auto
@@ -211,6 +221,8 @@ body
     &.active
       width: 450px
       filter: none
+      margin-left: 45px
+      margin-right: 45px
       .title
         font-size: 28px
       .slide-text

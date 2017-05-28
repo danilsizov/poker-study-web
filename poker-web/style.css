@@ -152,20 +152,22 @@ body {
   text-align: center;
   font-family: Century Gothic; }
   .slider .slider-wrapper {
-    position: relative; }
+    position: relative;
+    overflow: hidden;
+    height: 500px; }
     .slider .slider-wrapper .controls img {
       cursor: pointer;
       position: absolute; }
       .slider .slider-wrapper .controls img.left {
-        top: 50px;
+        top: 170px;
         left: 300px; }
       .slider .slider-wrapper .controls img.right {
-        top: 49px;
+        top: 169px;
         right: 300px; }
   .slider .dots {
     display: flex;
     justify-content: center;
-    margin-top: 100px; }
+    margin-top: 460px; }
     .slider .dots .dot {
       height: 13px;
       width: 13px;
@@ -173,7 +175,7 @@ body {
       border: 1px solid black;
       margin: 0 12px;
       position: relative; }
-      .slider .dots .dot.active:after {
+      .slider .dots .dot:after {
         content: " ";
         position: absolute;
         background-color: #9b1012;
@@ -181,16 +183,23 @@ body {
         height: 11px;
         border-radius: 50%;
         left: 1px;
-        top: 1px; }
+        top: 1px;
+        transition: all 0.4s ease-out 0s;
+        opacity: 0; }
+      .slider .dots .dot.active:after {
+        opacity: 1; }
   .slider .slider-container {
     display: flex;
     margin-top: 130px;
     align-items: center;
-    justify-content: space-around; }
+    justify-content: flex-start;
+    width: 999999px;
+    position: absolute;
+    transition: all 0.4s ease-out 0s; }
   .slider .slide {
     filter: blur(5px);
     width: 315px;
-    transition: all 1s ease-out 0s; }
+    transition: all 0.4s ease-out 0s; }
     .slider .slide .slide-text {
       width: 70%;
       margin: auto;
@@ -206,7 +215,9 @@ body {
       transition: inherit; }
     .slider .slide.active {
       width: 450px;
-      filter: none; }
+      filter: none;
+      margin-left: 45px;
+      margin-right: 45px; }
       .slider .slide.active .title {
         font-size: 28px; }
       .slider .slide.active .slide-text {
