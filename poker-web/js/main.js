@@ -29,6 +29,9 @@ Slider.prototype = {
   },
 
   slide: function(number){
+    if (number < 0 || number > this.slides.length - 1) {
+      return;
+    }
     $(this.slides[this.currentSlide]).removeClass('active');
     $(this.controls[this.currentSlide]).removeClass('active');
     this.currentSlide = number;
