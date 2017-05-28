@@ -8,7 +8,8 @@
 
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background: #f6f6f6; }
 
 .nexa-font {
   font-family: Nexa Light; }
@@ -16,11 +17,24 @@ body {
 .cent-font {
   font-family: Century Gothic; }
 
+.redline {
+  height: 2px;
+  width: 100%;
+  background-color: #9b1012; }
+
 .container {
   width: 1170px;
   margin: auto;
   padding-right: 15px;
   padding-left: 15px; }
+
+.tag {
+  background-color: #f8f8f8;
+  color: #2d2d2d;
+  font-size: 16px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-family: Century Gothic; }
 
 .first_menu {
   width: 100%;
@@ -431,14 +445,9 @@ footer {
         font-size: 16px;
         color: #ededed; }
       .news .cards .novelty .tag {
-        background-color: #f8f8f8;
         position: absolute;
         bottom: 10px;
-        right: 10px;
-        color: #2d2d2d;
-        font-size: 16px;
-        padding: 3px 10px;
-        border-radius: 20px; }
+        right: 10px; }
   .news .btn {
     width: 260px;
     display: block;
