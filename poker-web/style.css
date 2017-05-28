@@ -199,7 +199,8 @@ body {
   .slider .slide {
     filter: blur(5px);
     width: 315px;
-    transition: all 0.4s ease-out 0s; }
+    transition: all 0.4s ease-out 0s;
+    margin: 32.5px 0; }
     .slider .slide .slide-text {
       width: 70%;
       margin: auto;
@@ -216,8 +217,7 @@ body {
     .slider .slide.active {
       width: 450px;
       filter: none;
-      margin-left: 45px;
-      margin-right: 45px; }
+      margin: 0 45px; }
       .slider .slide.active .title {
         font-size: 28px; }
       .slider .slide.active .slide-text {
