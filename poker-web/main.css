@@ -83,6 +83,52 @@ body {
   .second_menu h2 {
     cursor: pointer; }
 
+.red-tittle-line {
+  width: 400px;
+  height: 3px;
+  background: #9b1012;
+  margin: auto; }
+
+.block-tittle {
+  text-align: center; }
+
+.main-text {
+  font-size: 60px;
+  margin-top: 120px; }
+
+footer {
+  height: 300px;
+  width: 100%;
+  background-color: #2d2d2d;
+  box-sizing: border-box;
+  padding-top: 50px; }
+  footer .links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+    font-family: Nexa Light;
+    margin-bottom: 60px; }
+    footer .links a {
+      text-decoration: none;
+      color: white; }
+  footer .greyline {
+    background-color: #383838;
+    width: 100%;
+    height: 2px; }
+  footer .copyright {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px; }
+    footer .copyright .socnet a {
+      margin-right: 25px; }
+      footer .copyright .socnet a img {
+        width: 35px; }
+    footer .copyright .all-rights {
+      text-align: right;
+      font-size: 16px;
+      font-family: Century Gothic;
+      color: white; }
+
 .action-group {
   margin-top: 180px; }
   .action-group form {
@@ -231,34 +277,10 @@ body {
     .slider .slide .red-tittle-line {
       width: 70%; }
 
-.red-tittle-line {
-  width: 400px;
-  height: 3px;
-  background: #9b1012;
-  margin: auto; }
-
-.block-tittle {
-  text-align: center; }
-
-.main-text {
-  font-size: 60px;
-  margin-top: 120px; }
-
 .small-text {
   font-size: 26px;
   color: #717171;
   padding-top: 10px; }
-
-.mini-line {
-  width: 100%;
-  height: 3px;
-  background: #9b1012;
-  margin: auto;
-  margin-top: 10px; }
-
-.per-month {
-  font-size: 17px;
-  margin-top: 0px; }
 
 .price {
   font-family: Century Gothic;
@@ -428,36 +450,3 @@ body {
     font-size: 35px;
     text-align: center;
     border-radius: 12px; }
-
-footer {
-  height: 300px;
-  width: 100%;
-  background-color: #2d2d2d;
-  box-sizing: border-box;
-  padding-top: 50px; }
-  footer .links {
-    display: flex;
-    justify-content: space-between;
-    font-size: 40px;
-    font-family: Nexa Light;
-    margin-bottom: 60px; }
-    footer .links a {
-      text-decoration: none;
-      color: white; }
-  footer .greyline {
-    background-color: #383838;
-    width: 100%;
-    height: 2px; }
-  footer .copyright {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 60px; }
-    footer .copyright .socnet a {
-      margin-right: 25px; }
-      footer .copyright .socnet a img {
-        width: 35px; }
-    footer .copyright .all-rights {
-      text-align: right;
-      font-size: 16px;
-      font-family: Century Gothic;
-      color: white; }
