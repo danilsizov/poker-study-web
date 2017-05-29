@@ -270,3 +270,16 @@ content {
           content .column.right .videos .video.blocked .block span {
             font-size: 23px;
             margin-top: 20px; }
+
+.popup {
+  display: none; }
+  .popup.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center; }
