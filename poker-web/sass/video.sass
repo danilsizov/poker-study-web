@@ -48,6 +48,30 @@ content
           img
             margin-right: 25px
             vertical-align: middle
+        .custom-select
+          position: relative
+          margin-top: 30px
+          width: 100%
+          &:after
+            content: " "
+            position: absolute
+            top: 13px
+            right: 0
+            background-image: url('../img/arrow-down-sm.png')
+            background-color: white
+            background-repeat: no-repeat
+            width: 15px
+            height: 15px
+          select
+            width: 100%
+            font: 24px Century Gothic
+            outline: none
+            border: none
+            border-bottom: 2px solid $red
+            option:hover
+              box-shadow: 0 0 10px 100px #1882A8 inset
+              background: transparent
+              color: red
     &.right
       width: 50%
       .search
@@ -125,6 +149,8 @@ content
               flex-direction: column
               justify-content: center
               align-items: center
+              color: black
+              text-decoration: none
               span
                 font-size: 23px
                 margin-top: 20px
